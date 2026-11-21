@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savora | Fresh Food, Made with Love</title>
+  <meta name="description" content="Savora - a modern kitchen serving fresh, flavourful food." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Sav<span>o</span>ra</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Reserve</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="cart-btn" id="cartBtn" aria-label="Open order">
+          🛒 <span id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="tag">🔥 Fresh &amp; Flavourful</span>
+        <h1>Good food is <em>good mood.</em></h1>
+        <p>Handcrafted dishes made from the freshest ingredients, delivered hot to your table or your doorstep.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#contact" class="btn btn-outline">Book a Table</a>
+        </div>
+        <div class="stats">
+          <div><strong data-count="12000">0</strong><span>Happy Guests</span></div>
+          <div><strong data-count="85">0</strong><span>Signature Dishes</span></div>
+          <div><strong data-count="15">0</strong><span>Years of Taste</span></div>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="blob"></div>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Delicious plated food" />
+        <div class="float-card c1">⭐ 4.9 <small>Rated by guests</small></div>
+        <div class="float-card c2">🚴 30 min <small>Fast delivery</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features container">
+    <div class="feature reveal"><span>🥗</span><h3>Fresh Ingredients</h3><p>Sourced daily from local farms.</p></div>
+    <div class="feature reveal"><span>👨‍🍳</span><h3>Expert Chefs</h3><p>Crafted by passionate cooks.</p></div>
+    <div class="feature reveal"><span>🚀</span><h3>Fast Delivery</h3><p>Hot and on time, every time.</p></div>
+    <div class="feature reveal"><span>💚</span><h3>Made with Love</h3><p>Every plate tells a story.</p></div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Our Menu</span>
+        <h2>Dishes you will <em>love</em></h2>
+        <p>Pick your favourite and add it to your order.</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="mains">Mains</button>
+        <button class="filter" data-filter="starters">Starters</button>
+        <button class="filter" data-filter="breakfast">Breakfast</button>
+        <button class="filter" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-images reveal">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80" alt="Chef plating a dish" />
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant interior" />
+      </div>
+      <div class="about-text reveal">
+        <span class="tag">Our Story</span>
+        <h2>Cooking with <em>heart</em> since 2011</h2>
+        <p>Savora started as a tiny kitchen with one big idea: food should feel like home. Today we blend traditional recipes with modern techniques, always using seasonal, honestly sourced ingredients.</p>
+        <ul class="checks">
+          <li>100% fresh, never frozen</li>
+          <li>Vegetarian &amp; vegan friendly options</li>
+          <li>Eco-friendly packaging</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">Testimonials</span>
+        <h2>What guests <em>say</em></h2>
+      </div>
+      <div class="slider reveal">
+        <div class="slides" id="slides">
+          <div class="slide"><p>“The best pasta I've had outside Italy. The service was warm and the flavours were unreal.”</p><h4>Aarav Mehta</h4><small>Food Blogger</small></div>
+          <div class="slide"><p>“Ordered for a family dinner and everyone was blown away. Fresh, hot and beautifully packed.”</p><h4>Priya Nair</h4><small>Regular Guest</small></div>
+          <div class="slide"><p>“Cozy ambience, amazing desserts. The molten chocolate cake is a must-try!”</p><h4>Rohan Kulkarni</h4><small>Verified Diner</small></div>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="tag">Reservation</span>
+        <h2>Book your <em>table</em></h2>
+        <p>Reserve a spot and we'll have everything ready for you.</p>
+        <div class="info">
+          <p>📍 12 Foodie Lane, Koregaon Park, Pune</p>
+          <p>📞 +91 98765 43210</p>
+          <p>🕒 Mon–Sun: 11:00 AM – 11:00 PM</p>
+        </div>
+      </div>
+
+      <form class="form reveal" id="reserveForm" novalidate>
+        <div class="row">
+          <div class="field"><input type="text" id="name" placeholder="Your name" required /></div>
+          <div class="field"><input type="tel" id="phone" placeholder="Phone number" required /></div>
+        </div>
+        <div class="row">
+          <div class="field"><input type="date" id="date" required /></div>
+          <div class="field">
+            <select id="guests" required>
+              <option value="">Guests</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><textarea id="note" rows="3" placeholder="Special requests (optional)"></textarea></div>
+        <button type="submit" class="btn btn-primary full">Reserve Now</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">Sav<span>o</span>ra</a>
+        <p>Fresh food, made with love. Come hungry, leave happy.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#menu">Menu</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Reserve</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="news" id="newsForm">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit">→</button>
+        </form>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Savora. All rights reserved.</p>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-head">
+      <h3>Your Order</h3>
+      <button class="icon-btn" id="closeDrawer" aria-label="Close">✕</button>
+    </div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <button class="btn btn-primary full" id="checkout">Place Order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
